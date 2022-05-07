@@ -1,7 +1,6 @@
-#archivo para probar metodos y cosas varias
+#
+def run():
+    pass
 
-alto = float(input("ingrese alto: "))
-ancho = float(input("ingrese ancho: "))
-profundo = float(input("ingrese profundo: "))
-volumen = alto * ancho * profundo
-print (volumen)
+if __name__ == "__main__":
+    run()
