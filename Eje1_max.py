@@ -9,7 +9,7 @@ def maximo(number1, number2):
 def run():
     number1 = int(input('Number 1:'))
     number2 = int(input('Number 2:'))
-    print(f"El numero mayor es: "+str(maximo(number1, number2)))
+    print("El numero mayor es: "+str(maximo(number1, number2)))
 
 if __name__ == "__main__":
     run()
