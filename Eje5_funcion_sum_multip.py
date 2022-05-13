@@ -9,7 +9,9 @@ def sum(lista):
 def multip(lista):
     multiplicar = 1
     for numero in lista:
+        print(str(numero)+"+")
         multiplicar = multiplicar * numero
+
     return multiplicar
 
 def run():
