@@ -2,6 +2,7 @@
 # **** 
 # **** 
 # **** 
+#Autor: Luis Carlos Pacheco Lanzziano
 def letra_A():
     print('''********
 ********

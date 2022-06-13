@@ -1,4 +1,5 @@
 #  Definir una función max_de_tres(), que tome tres números como argumentos y devuelva el mayor de ellos.
+#Autor: Luis Carlos Pacheco Lanzziano
 def maximo(number1, number2, number3):
     if number1 > number2 and number1 > number3:
         bigger_number = number1

@@ -1,4 +1,5 @@
 #  Definir una función max() que tome como argumento dos números y devuelva el mayor de ellos.
+#Autor: Luis Carlos Pacheco Lanzziano
 def maximo(number1, number2):
     if number1 > number2:
         bigger_number = number1

@@ -1,4 +1,5 @@
 #  Definir una función max() que tome como argumento dos números y devuelva el mayor de ellos.
+#Autor: Luis Carlos Pacheco Lanzziano
 def volumen(alto, ancho, profundo):
     volumen = alto * ancho * profundo
     return volumen

@@ -2,7 +2,7 @@
 # **** 
 # ********* 
 # ******* 
-
+#Autor: Luis Carlos Pacheco Lanzziano
 def procedimiento(lista):
     for numero in lista:
         print("*"*numero)

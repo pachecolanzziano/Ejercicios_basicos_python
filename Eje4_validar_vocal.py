@@ -1,4 +1,5 @@
 #Escribir una función que tome un carácter y devuelva True si es una vocal, de lo contrario devuelve False
+#Autor: Luis Carlos Pacheco Lanzziano
 def verificar_vocal(caracter):
     if caracter =="a" or caracter =="e" or caracter =="i" or caracter =="o" or caracter =="u":
         vocal = True
