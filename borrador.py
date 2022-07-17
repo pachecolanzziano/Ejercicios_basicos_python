@@ -1,6 +1,14 @@
 #Autor: Luis Carlos Pacheco Lanzziano
+
+def leerDsv():
+    data = []
+    with open("./archivo.csv", "r", encoding="utf-8") as documento:
+        for linea in documento:
+            data.append(linea)
+    documento.close()
+
+
 def run():
-    for n in range(1, 11):
-        print(n)
+    pass
 if __name__ == "__main__":
     run()
