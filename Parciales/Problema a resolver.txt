@@ -1,0 +1,70 @@
+Problemática a resolver (Contexto):
+La empresa ROZO MOTOS S.A solicita al área de sistemas que realice un programa que determine el valor a
+pagar por un usuario dependiendo el tipo de mantenimiento a realizar, tomando en cuenta los siguientes datos:
+Cilindraje
+c.c
+Identificador
+Servicio
+Tipo de Mantenimiento
+Valor mantenimiento
+Valor del descuento
+------------------------------
+Menos de 100
+100A Inspección 30.000 5%
+101A Lubricación 40.000 10%
+102A Ajuste motor 120.000 12%
+103A Combo 160.000 15%
+------------------------------
+De 100 a 200
+100B Inspección 32.000 5%
+101B Lubricación 40.000 10%
+102B Ajuste motor 180.000 12%
+103B Combo 210.000 15%
+------------------------------
+De 200 o más
+100C Inspección 42.000 5%
+101C Lubricación 60.000 10%
+102C Ajuste motor 210.000 12%
+103C Combo 290.000 15%
+------------------------------
+Requerimientos:
+ El programa diseñado debe solicitar al encargado del ingreso de la moto que digite por teclado:
+ Digite documento usuario:
+ Digite nombre usuario:
+ Digite teléfono:
+ Digite identificador del servicio:
+ Si el encargado digita un identificador de servicio que no se encuentre registrado mostrar un mensaje por
+pantalla que indique “Identificador no valido INTENTE de nuevo”.
+ El programa debe reconocer según el identificador del servicio, cual es el cilindraje de la moto, el tipo de
+mantenimiento a realizar y el valor del mantenimiento.
+ De acuerdo al identificador del servicio calcular el descuento sobre el valor del mantenimiento que debe
+pagar el usuario.
+total=valor_mantenimiento – (valor_mantenimiento*descuento)
+ El programa debe imprimir por pantalla:
+Documento usuario:
+Nombre usuario:
+Telefono:
+Cilindraje:
+Tipo de mantenimiento:
+Porcentaje de descuento aplicado:
+Total a pagar:
+ El programa se debe seguir ejecutando y pedir datos al usuario con el siguiente mensaje “Digite los datos
+del siguiente usuario” hasta que se digite como numero de documento 0 el programa finaliza la ejecución
+y muestra un mensaje “Fin de ejecución del Programa”. (ciclo While)
+
+--------------------------------------------------------
+Resultado esperado:
+Como ejemplo de ejecución del programa usar el siguiente:
+ Digite documento usuario: 1090787217
+ Digite nombre usuario: Daniel Perez
+ Telefono: 3128785455
+ Digite identificador del servicio: 103C
+
+El programa debe imprimir:
+Documento usuario: 1090787217
+Nombre usuario: Daniel Perez
+Telefono: 3128785455
+Cilindraje: 200 c.c o más
+Tipo de mantenimiento: Combo
+Porcentaje de descuento aplicado: 15%
+Total a pagar: 246500
