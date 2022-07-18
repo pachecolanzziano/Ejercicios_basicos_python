@@ -1,0 +1,84 @@
+ruta de la demo 
+C:\Users\luis_\AppData\Local\Programs\Python\Python310\share\kivy-examples\demo\showcase
+python main.py
+
+#:kivy 2.1.0
+
+<GameScreen>:
+    FloatLayout:
+        pos: 0, 0
+        size: root.width, root.height
+
+        GridLayout:
+            cols: 2
+            pos_hint: {'x': .3, 'y': .3}
+            size_hint: None, None
+            size: root.width*.5, root.height*.5
+
+            Button:
+                text: 'Bnt1'
+            Button:
+                text: 'Bnt2'
+            Button:
+                text: 'Bnt3'
+            Button:
+                text: 'Bnt4'
+    # FloatLayout:
+    #     pos: 0, 0
+    #     size: root.width, root.height
+    #     Button:
+    #         text: 'Button 1'
+    #         # pos: 100, 100
+    #         pos_hint: {'x': .1, 'y': .1}
+    #         size_hint: .5, .1
+    #         size: 300, 200
+
+    #     Button:
+    #         text: 'Button 2'
+    #         # pos: 100, 350
+    #         pos_hint: {'x': .1, 'y': .2}
+    #         size_hint: .5, .1
+    #         size: 300, 200
+
+
+
+# <BotonSuma>:
+#     canvas:
+#         Rectangle:
+#             pos: self.x + 25, self.y + 25
+#             size: 200, 200
+    
+#     Button:
+#         # size: 100, 100
+#         background_color:0, 0, 1, 1
+#         size_hint:root.x + .8, root.y + .8
+#         pos: root.x, root.y
+
+
+
+
+#archivo.py
+
+from tkinter import Widget
+from kivy.app import App
+from kivy.uix.button import Button
+from kivy.uix.widget import Widget
+
+class GameScreen(Widget):
+    pass
+    #al no especificar nada su posicion sera desde el origen 0, 0 y su tamaño pcuapara toda la ventana
+
+# class BotonSuma(Button):
+#     def __init__(self, **kwargs):
+#         super(BotonSuma, self).__init__(**kwargs)
+#         self.text = "+"
+#         self.pos = (200, 200)
+#         self.size_hint = (.5, .5)
+
+class CalculadoraApp(App):
+    def build(self):
+        return GameScreen()
+
+
+if __name__ == "__main__":
+    CalculadoraApp().run()
